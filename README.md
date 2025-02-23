@@ -9,13 +9,21 @@
 ***
 
 ## Описание
- [Телеграмм бот](@nolucker_python_bot) 
+<b>Жанр:</b> [Казуальная головоломка](https//ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B7%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B8%D0%B3%D1%80%D0%B0)<br>
+<b>Платформа:</b> ПК ([Tkinter](https://ru.wikipedia.org/wiki/Tkinter) + [Python](https://ru.wikipedia.org/wiki/Python))<br>
+<b>Цель игры:</b> Собрать три и более одинаковых фруктов в ряд (горизонтально или вертикально), 
+чтобы они исчезли и принесли очки игроку.<br>
+
+Игровое поле представляет собой сетку размером 5 x 4, заполненную случайными фруктами. Игрок может менять местами два соседних фрукта, если это приводит к образованию комбинации из трёх или более одинаковых фруктов в ряд или столбец.
+
+p.s: Игра сырая. Расписано все очень коротко. Цель проекта: демонстрация визуала и небольшого функционала.
+
 ## Запуск игры
 
 1. Скопировать файлы проекта.
 
 ```commandline
-git clone https://gitlab.skillbox.ru/almir_zalitov/telegram_bot_for_search_hostels.git
+git clone https://github.com/Nolucker391/game-fruits-in-row.git
 ```
 
 2. Установить зависимости.
@@ -28,7 +36,8 @@ git clone https://gitlab.skillbox.ru/almir_zalitov/telegram_bot_for_search_hoste
 
 ## Инструменты
 
-* [Python](https://www.python.org/downloads) `>=3.9.0`
-* [Pygame](https://pypi.org/project/pygame) `>=2.0.0`
-* [Pygame Widgets](https://pypi.org/project/pygame-widgets) `>=0.6.0,<1.0.0`
-* [jsonschema](https://pypi.org/project/jsonschema) `>=3.2.0,<4.0.0`
+* [Python](https://www.python.org/downloads) `3.13.1`
+* [Tkinter](https://pypi.org/project/pygame) `latest`
+* [logger](https://pypi.org/project/pygame-widgets) `latest`
+* [Pillow](https://pypi.org/project/jsonschema) `11.1.0`
+* [os]()`latest`

@@ -2,8 +2,8 @@ import random
 import tkinter
 from PIL import Image, ImageTk
 
-from app.settings import root, background_photo, GRID_COLS, GRID_ROWS, START_Y, START_X, CELL_SIZE
-from app.config import fruit_images, URLS
+from settings import root, background_photo, GRID_COLS, GRID_ROWS, START_Y, START_X, CELL_SIZE
+from config import fruit_images, URLS
 from logger import logger
 
 logger.info("Создание игрового поля...")

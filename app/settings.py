@@ -1,6 +1,6 @@
 import tkinter
 from PIL import Image, ImageTk
-from app.config import URLS
+from config import URLS
 from logger import logger
 
 logger.info("Создание главного окна...")

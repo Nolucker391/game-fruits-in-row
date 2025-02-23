@@ -1,5 +1,5 @@
-from app.game import create_game_board
-from app.settings import root
+from game import create_game_board
+from settings import root
 from logger import logger
 
 logger.info("Запуск игры...")
