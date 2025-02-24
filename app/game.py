@@ -72,7 +72,7 @@ def get_grid_position(x, y):
     return None
 
 def swap_fruits(fruit1, fruit2):
-    """Меняет местами два фрукта (и их изображения)"""
+    """Меняет местами два фрукта и обновляет позиции в логике и на экране."""
     row1, col1 = fruit_positions[fruit1]
     row2, col2 = fruit_positions[fruit2]
 
@@ -80,19 +80,19 @@ def swap_fruits(fruit1, fruit2):
     x1, y1 = canvas.coords(fruit1)
     x2, y2 = canvas.coords(fruit2)
 
-    # Обновляем позиции в Canvas
+    # Обновляем координаты на Canvas
     canvas.coords(fruit1, x2, y2)
     canvas.coords(fruit2, x1, y1)
 
-    # Обновляем позиции в словаре
+    # Обновляем позиции фруктов в словаре fruit_positions
     fruit_positions[fruit1], fruit_positions[fruit2] = (row2, col2), (row1, col1)
 
-    # Обновляем изображения фруктов
+    # Обновляем изображения фруктов в словаре fruit_images_dict
     fruit_images_dict[fruit1], fruit_images_dict[fruit2] = (
         fruit_images_dict[fruit2], fruit_images_dict[fruit1]
     )
 
-    # Обновляем массив фруктов
+    # Обновляем массив фруктов на поле
     fruit_objects[row1][col1], fruit_objects[row2][col2] = (
         fruit_objects[row2][col2], fruit_objects[row1][col1]
     )
@@ -130,7 +130,7 @@ def on_release(event):
                     (abs(new_col - old_col) == 1 and new_row == old_row):
                 target_fruit = fruit_objects[new_row][new_col]
 
-                # Меняем фрукты местами
+                # Меняем фрукты местами (логика и изображения)
                 swap_fruits(selected_fruit, target_fruit)
 
         # Возвращаем фрукт к обычному размеру
